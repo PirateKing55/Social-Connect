@@ -36,6 +36,10 @@ mongoose.connect
 
 // uses of routes
 
+app.get('/', (req, res) => {
+    res.send('Hello there!')
+})
+
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute);
 app.use('/post', PostRoute);
